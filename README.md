@@ -4,9 +4,9 @@
 
 다음 스크린샷과 같이 두개의 프로세스가 돌아가게 되며 서로 레디스를 통해 연동됩니다.
 
-<img width="1163" alt="image" src="https://user-images.githubusercontent.com/13586185/179343138-b16aaccc-434c-4262-ba05-78b9cad9817b.png">
+https://user-images.githubusercontent.com/13586185/179343727-645379f2-2633-449a-b6a9-b9eb5680c99f.mov
 
-레디스 서버를 통해 노드로 개발된 서버가 아니더라도, PUB/SUB을 통해 다른 언어로 만들어진 서버에 메시지를 전달할 수 있습니다. 따라오 유연한 확장이 가능합니다.
+레디스 서버를 통해 노드로 개발된 서버가 아니더라도, PUB/SUB을 통해 다른 언어로 만들어진 서버에 메시지를 전달할 수 있습니다. 따라서 유연한 확장이 가능합니다.
 
 ## Usage
 
