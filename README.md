@@ -4,7 +4,7 @@
 
 다음 스크린샷과 같이 두개의 프로세스가 돌아가게 되며 서로 레디스를 통해 연동됩니다.
 
-<img width="1088" alt="image" src="https://user-images.githubusercontent.com/13586185/179341934-bbae59f7-45ed-4e0c-ab53-cc51c43c1522.png">
+<img width="1976" alt="image" src="https://user-images.githubusercontent.com/13586185/179342932-30c199be-96f0-4091-a51a-274f3cb557e8.png">
 
 ```bash
 yarn install

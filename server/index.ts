@@ -21,6 +21,12 @@ class ServerApplication {
 
         await this.redisClient.publish("start:convert-pdf", content);
 
+        await this.redisClient.subscribe("end:convert-pdf", (content) => {
+            console.log(content);
+
+            this.redisClient.unsubscribe("end:convert-pdf");
+        });
+
         console.log("PDF 변환 작업이 시작되었습니다.");
     }
 

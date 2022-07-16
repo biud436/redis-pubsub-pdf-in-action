@@ -24,7 +24,7 @@ export class RedisService {
         await this.client.subscribe(channel, cb);
     }
 
-    async unsubscribe(channel: string, cb: (data: any) => void) {
+    async unsubscribe(channel: string, cb?: (data: any) => void) {
         await this.client.unsubscribe(channel, cb);
     }
 
