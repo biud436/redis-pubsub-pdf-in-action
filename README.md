@@ -10,7 +10,7 @@ https://user-images.githubusercontent.com/13586185/179343727-645379f2-2633-449a-
 
 ## Usage
 
-before running the process, you need to install the following dependencies:
+before running the process, you need to install some dependencies using below command:
 
 ```bash
 yarn install
