@@ -1,0 +1,26 @@
+{
+    "name": "pdf-in-action",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "pdf-server:start": "yarn ts-node src/index.ts",
+        "server:start": "yarn ts-node ./server/index.ts"
+    },
+    "keywords": [],
+    "author": "biud436",
+    "license": "MIT",
+    "dependencies": {
+        "@types/html-pdf": "^3.0.0",
+        "html-pdf": "^3.0.1",
+        "redis": "^4.2.0",
+        "reflect-metadata": "^0.1.13",
+        "ts-node": "^10.9.1",
+        "tsc": "^2.0.4",
+        "typedi": "^0.10.0",
+        "typescript": "^4.7.4"
+    },
+    "devDependencies": {
+        "@types/node": "^18.0.5"
+    }
+}
