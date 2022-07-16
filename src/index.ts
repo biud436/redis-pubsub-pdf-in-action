@@ -2,7 +2,7 @@ import "reflect-metadata";
 import * as path from "path";
 import * as fs from "fs";
 import * as pdf from "html-pdf";
-import { RedisService } from "./redis";
+import { RedisService } from "../libs/redis";
 import Container from "typedi";
 
 class Application {

@@ -1,6 +1,6 @@
 import "reflect-metadata";
 import Container, { Service } from "typedi";
-import { RedisService } from "../src/redis";
+import { RedisService } from "../libs/redis";
 import * as path from "path";
 import * as fs from "fs";
 
