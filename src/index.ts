@@ -13,13 +13,14 @@ class Application {
     async start() {
         await this.redisClient.connect();
 
-        console.log("변환 작업을 서버에 요청하였습니다");
-
         await this.redisClient.subscribe("start:convert-pdf", (content) => {
+            console.log("PDF 변환 작업이 시작되었습니다.");
+
             this.toPDF(content, {
                 format: "A4",
             }).then(async (e) => {
                 await this.redisClient.unsubscribe("start:convert-pdf");
+                console.log("변환이 완료되었음을 통지합니다");
                 await this.redisClient.publish(
                     "end:convert-pdf",
                     "PDF 작업이 완료되었습니다."

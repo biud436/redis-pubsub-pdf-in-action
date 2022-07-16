@@ -19,6 +19,8 @@ class ServerApplication {
             "utf-8"
         );
 
+        console.log("PDF 서버로 HTML 파일을 보냈습니다");
+
         await this.redisClient.publish("start:convert-pdf", content);
 
         await this.redisClient.subscribe("end:convert-pdf", (content) => {
@@ -26,8 +28,6 @@ class ServerApplication {
 
             this.redisClient.unsubscribe("end:convert-pdf");
         });
-
-        console.log("PDF 변환 작업이 시작되었습니다.");
     }
 
     join = (root: string) => {
